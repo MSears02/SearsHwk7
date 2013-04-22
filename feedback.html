@@ -22,18 +22,28 @@
 
 
             <div data-role="content">
-				<label for="name">Name:</label>
-				<input type="text" name="name" id="name" value="" />
-				<hr />
-				<label for="email">E-Mail:</label>
-				<input type="email" name="email" id="email" value="" />
-				<label for="comments">Comments:</label>
-				<textarea cols="40" rows="8" name="comments" id="comments"></textarea>
-				<label for="contact">May We Contact You?</label>
-				<select name="slider" id="contact" data-role="slider">
-					<option value="no">No</option>
-					<option value="yes">Yes</option>					
-				</select>
+				<div data-role="fieldcontain">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" value="" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="email">E-Mail:</label>
+					<input type="email" name="email" id="email" value="" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="comments">Comments:</label>
+					<textarea cols="40" rows="8" name="comments" id="comments"></textarea>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="contact">May We Contact You?</label>
+					<select name="slider" id="contact" data-role="slider">
+						<option value="no">No</option>
+						<option value="yes">Yes</option>					
+					</select>
+				</div>
 				
                <form action"#" method="post" data-transition="none">
                		<input type="submit" value="Send" data-theme="a" />
